@@ -1,0 +1,17 @@
+.cachorros{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 0 -24em;
+  background: #EDAB46;
+}
+.carrosel{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10em;
+}
+.boxes{
+  width: 20em;
+  padding: 1em;
+  background-color: #fff;
+}

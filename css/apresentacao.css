@@ -1,0 +1,29 @@
+.apresentacao{
+  display: flex;
+  margin-top: 4em;
+  align-items: center;
+  line-height: 1em;
+}
+.apresentacao h1{
+  font-size: 2.4em;
+  color: #FF7C14;
+}
+.apresentacao h3{
+  margin-bottom: 4em;
+  letter-spacing: 0.0.5em;
+  font-size: 1.6em;
+  color: #828282;
+}
+.apresentacao a{
+  padding: 1em 4em;
+  border-radius: 1em;
+  background-color: #EF8C24;
+  animation: linear;
+}
+.apresentacao a:hover{
+  background: #EDAB46;
+  transition: 0.4s;
+}
+.apresentacao img{
+  width: 36.5em;
+}
