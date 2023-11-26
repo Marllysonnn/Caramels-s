@@ -1,12 +1,14 @@
-.cachorros{
-  display: block;
+.cachorros {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 0 -12.5%;
   padding: 3em;
   background: #EDAB46;
 }
-.title{
+
+.title {
   font-family: 'LuckiestGuy';
   font-size: 2em;
   letter-spacing: 0.1em;
@@ -14,32 +16,63 @@
   margin: 0;
   margin-bottom: 1em;
 }
-.carrosel{
+
+.container {
+  display: flex;
+  width: 48em;
+  align-self: center;
+  overflow: hidden;
+}
+
+.carrossel {
   display: flex;
   gap: 3em;
-  justify-content: space-evenly;
-  margin: 0 10em;
+  transition: margin 0.5s;
 }
-.boxes{
+
+.boxes {
   display: flex;
   align-items: center;
+  width: 14em;
   gap: 0.4em;
   flex-direction: column;
   border-radius: 0.5em;
   background-color: #fff;
 }
-.boxes img{
+
+.boxes img {
   width: 10em;
 }
-.boxes h4, h3{
+
+.boxes h4,
+.boxes h3 {
   margin: 0;
 }
+
 .boxes a {
   padding: 0.8em 2em;
   border-radius: 1em;
   margin: 0.5em;
   background-color: #FFC145;
 }
-.boxes a:hover{
+.boxes a:hover {
   background-color: #EDAB46;
+}
+.checkbox{
+  margin-top: 2em;
+  display: flex;
+  align-self: center;
+}
+input[type="radio"]{
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #74664a;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: linear;
+}
+input[type="radio"]:checked{
+  background-color: #fff;
+  transition: 1s;
 }

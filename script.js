@@ -1,7 +1,7 @@
-const input = document.querySelector('input');
-const pesquisa = document.querySelector('.pesquisa');
+const input = document.querySelector('.input');
 const lupa = document.querySelector('.lupa')
-let inputAberto = false;
+const scroll = document.querySelector('.carrossel')
+const container = document.querySelector('.container')
 
 function abrirInput() {
   input.style.width = '22em';
@@ -24,5 +24,15 @@ function handleClickOutside(event) {
   }
 }
 
+function arrastar(index) {
+  const radioButton = document.getElementById('opcao' + (index + 1));
+
+        if (radioButton.checked) {
+            const marginLeftValue = -51 * index + 'em';
+            scroll.style.marginLeft = marginLeftValue;
+            scroll.style.transition = '2s';
+}}
+
 window.addEventListener('click', handleClickOutside);
+container.addEventListener('click', arrastar);
 lupa.addEventListener('click', abrirInput);

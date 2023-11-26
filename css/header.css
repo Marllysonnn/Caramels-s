@@ -28,7 +28,7 @@ a{
   margin-left: 0.5em;
   z-index: 2;
 }
-input{
+input[type="search"]{
   position: absolute;
   height: 4em;
   margin-top: -0.6em;
@@ -40,7 +40,7 @@ input{
   z-index: 1;
   font-size: 0.7em;
 }
-input:focus{
+input[type="search"]:focus{
   padding-left: 4em;
   transition: 0s;
   outline: none;
