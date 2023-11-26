@@ -2,16 +2,44 @@
   display: block;
   justify-content: center;
   text-align: center;
-  margin: 0 -24em;
+  margin: 0 -12.5%;
+  padding: 3em;
   background: #EDAB46;
+}
+.title{
+  font-family: 'LuckiestGuy';
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 1em;
 }
 .carrosel{
   display: flex;
+  gap: 3em;
   justify-content: space-evenly;
   margin: 0 10em;
 }
 .boxes{
-  width: 20em;
-  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  flex-direction: column;
+  border-radius: 0.5em;
   background-color: #fff;
+}
+.boxes img{
+  width: 10em;
+}
+.boxes h4, h3{
+  margin: 0;
+}
+.boxes a {
+  padding: 0.8em 2em;
+  border-radius: 1em;
+  margin: 0.5em;
+  background-color: #FFC145;
+}
+.boxes a:hover{
+  background-color: #EDAB46;
 }

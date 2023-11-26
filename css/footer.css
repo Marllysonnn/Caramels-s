@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    height: 16em;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 -12.5%;
+    background: #000;
+}
+footer img{
+    width: 10em;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+footer a img{
+    width: 1.4em;
+}
+footer div{
+    line-height: 3em;
+}
+footer h3{
+    color: #fff;
+}

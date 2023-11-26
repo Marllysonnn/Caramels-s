@@ -1,9 +1,17 @@
 @import "css/header.css";
 @import "css/apresentacao.css";
 @import "css/cachorros.css";
+@import "css/sessao.css";
+@import "css/avaliados.css";
+@import "css/footer.css";
+
+@font-face {
+  font-family: LuckiestGuy;
+  src: url(fonts/LuckiestGuy-Regular.ttf);
+}
 
 body{
-  margin: 0 24rem;
+  margin: 0 10%;
   font-family: Helvetica, sans-serif;
 }
 *{

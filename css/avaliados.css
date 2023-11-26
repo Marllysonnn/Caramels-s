@@ -1,0 +1,21 @@
+.avaliados{
+    display: block;
+    text-align: center;
+    margin: 0 -12.5%;
+    padding: 5em;
+    background: #EDAB46;
+}
+.bem_avaliados{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+.avaliados img{
+    width: 10em;
+    animation: linear;
+    cursor: pointer;
+}
+.avaliados img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}

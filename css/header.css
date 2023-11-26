@@ -5,7 +5,7 @@ header{
 }
 .elipse{
   position: absolute;
-  width: 70%;
+  width: 80%;
   right: 0;
 }
 .selec, nav{
@@ -15,16 +15,24 @@ header{
   font-weight: 600;;
 }
 a{
+  font-size: 0.8em;
   color: #fff;
 }
 .selec img{
   cursor: pointer;
 }
-.pesquisa input{
+.lupa{
+  background-color: #EDAB46;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  margin-left: 0.5em;
+  z-index: 2;
+}
+input{
   position: absolute;
   height: 4em;
-  margin-top: -1em;
-  width: 0%;
+  margin-top: -0.6em;
+  width: 0em;
   border-radius: 1em;
   border: none;
   padding: 0;
@@ -32,7 +40,8 @@ a{
   z-index: 1;
   font-size: 0.7em;
 }
-.pesquisa input:focus{
+input:focus{
+  padding-left: 4em;
+  transition: 0s;
   outline: none;
-  padding-left: 1em;
 }
