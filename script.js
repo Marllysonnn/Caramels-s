@@ -1,7 +1,12 @@
 const input = document.querySelector('.input');
-const lupa = document.querySelector('.lupa')
-const scroll = document.querySelector('.carrossel')
-const container = document.querySelector('.container')
+const lupa = document.querySelector('.lupa');
+const scroll = document.querySelector('.carrossel');
+const container = document.querySelector('.container');
+const left = document.querySelector('#left');
+const right = document.querySelector('#right');
+
+let inputAberto = false;
+let marginLeftValue = 0;
 
 function abrirInput() {
   input.style.width = '22em';
@@ -18,7 +23,6 @@ function fecharInput() {
 }
 
 function handleClickOutside(event) {
-  // Verifica se o clique ocorreu fora do input e fecha-o se estiver aberto
   if (inputAberto && !lupa.contains(event.target) && !input.contains(event.target)) {
     fecharInput();
   }
@@ -26,13 +30,46 @@ function handleClickOutside(event) {
 
 function arrastar(index) {
   const radioButton = document.getElementById('opcao' + (index + 1));
+  radioButton.checked = true;
+  if (radioButton.checked) {
+    marginLeftValue = -51 * index;
+    scroll.style.marginLeft = marginLeftValue + 'em';
+    scroll.style.transition = '2s';
+    const newIndex = Math.abs(marginLeftValue / 51);
+    updateRadioState(newIndex);
+  }
+}
 
-        if (radioButton.checked) {
-            const marginLeftValue = -51 * index + 'em';
-            scroll.style.marginLeft = marginLeftValue;
-            scroll.style.transition = '2s';
-}}
+function leftDirec() {
+  if (marginLeftValue > -102) {
+    marginLeftValue -= 51;
+    scroll.style.marginLeft = marginLeftValue + 'em';
+    scroll.style.transition = '2s';
+    const index = Math.abs(marginLeftValue / 51);
+    updateRadioState(index);
+  }
+}
+
+function rightDirec() {
+  if (marginLeftValue < 0) {
+    marginLeftValue += 51;
+    scroll.style.marginLeft = marginLeftValue + 'em';
+    scroll.style.transition = '2s';
+    const index = Math.abs(marginLeftValue / 51);
+    updateRadioState(index);
+    
+  }
+}
+
+function updateRadioState(index) {
+  const radioButtons = document.getElementsByName('opcao');
+  radioButtons.forEach((radioButton, i) => {
+    radioButton.checked = i === index;
+  });
+}
 
 window.addEventListener('click', handleClickOutside);
+left.addEventListener('click', rightDirec);
+right.addEventListener('click', leftDirec);
 container.addEventListener('click', arrastar);
 lupa.addEventListener('click', abrirInput);
