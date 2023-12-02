@@ -1,0 +1,80 @@
+h5 {
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+}
+
+nav {
+    font-size: 0.8rem;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom {
+    color: #FFC145;
+    border-color: #FFC145;
+    background-color: #FFC145;
+  }
+  
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-filter {
+    margin-top: 50px;
+}
+
+#products {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#products a{
+    color: black;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 10em;
+    gap: 0.4em;
+    flex-direction: column;
+    border-radius: 0.5em;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc; 
+    padding: 1em;
+  }
+  
+  .cards img {
+    width: 8em;
+  }
+  
+  .cards h4,
+  .cards h3 {
+    margin: 0;
+  }
+  
+  .cards a {
+    padding: 0.8em 2em;
+    border-radius: 1em;
+    margin: 0.5em;
+    background-color: #FFC145;
+  }
+  .cards a:hover {
+    background-color: #EDAB46;
+  }
