@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3em -33.3%;
+    margin: 3em -23.5%;
+    overflow: hidden;
 }
 .sessao h1{
     font-family: 'LuckiestGuy';
@@ -27,7 +28,7 @@
 .tipo h4{
     font-size: 1.1em;
 }
-.sessao img{
+.tipos img{
     width: 8em;
     background-color: #EDAB46;
     padding: 1em;
@@ -38,4 +39,27 @@
 .sessao img:hover{
     scale: 1.1;
     transition: 0.5s;
+}
+.container_grid{
+    display: flex;
+    gap: 1em;
+    position: relative;
+    right: 0%;
+    animation: linear;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 5%;
+    width: 100vw;
+    row-gap: 2em;
+    transition: 2s;
+}
+.boxes{
+    justify-content: space-evenly;
+    justify-self: center;
+}
+.boxes h4{
+    display: flex;
+    text-align: center;
 }

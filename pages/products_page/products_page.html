@@ -9,23 +9,27 @@
     <title>Products</title>
 </head>
 <body>
-    <img src="../../css/img/elipse_header.png" alt="elipse do header" class="elipse">
-    <header>
-        <img class="logo_header" src="../../css/img/logo.svg" alt="">
+    <div class="svg-container" id="svgContainer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1340" height="134" viewBox="0 0 1300 134" fill="none">
+            <path d="M1517.58 -27.7678C1517.58 163.194 1494.91 129.5 1066.08 129.5C667.58 115 213.581 165.5 114.08 96.9998C-51.438 -89.1253 -167.603 -386.591 741.119 -373.536C1169.95 -373.536 1517.58 -218.73 1517.58 -27.7678Z" fill="#EDAB46"/>
+          </svg>
+      </div>
+    <header id="header">
+        <a href="../../index.html"><img class="logo" src="../../css/img/logo.png" alt="" /></a>
+        <div class="search">
+          <img class="lupa" src="../../css/img/pesquisa.svg" alt="pesquisa" />
+          <input class="input" type="search" />
+        </div>
         <nav>
-            <nav>
-                <a href="">Inicio</a>
-                <a href="pages/products_page/products_page.html">Produtos</a>
-                <a href="">Contato</a>
-              </nav>
-              <div class="selec">
-                <input class="input" type="search" />
-                <img class="lupa" src="../../css/img/pesquisa.svg" alt="pesquisa" />
-                <img src="../../css/img/carrinho.svg" alt="carrinho" />
-                <img src="../../css/img/perfil.svg " alt="perfil" />
-              </div>
+          <a href="../../index.html">Inicio</a>
+          <a href="pages/products_page/products_page.html">Produtos</a>
+          <a href="">Contato</a>
         </nav>
-    </header>
+        <div class="selec">
+          <img src="../../css/img/carrinho.svg" alt="carrinho" />
+          <img src="../../css/img/perfil.svg " alt="perfil" />
+        </div>
+      </header>
     <section class="filter">
         <div id="menu-filter">
             <h5>Filtrar produtos</h5>
@@ -90,6 +94,6 @@
             </div>
         </div>
     </section>
+    <script src="../../script.js"></script>
 </body>
-<script src="../../script.js"></script>
 </html>

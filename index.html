@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-
+  
   <body>
-    <img class="elipse" src="css/img/elipse.png" alt="" />
-    <header>
-      <img src="css/img/logo.svg" alt="" />
+    <div class="svg-container" id="svgContainer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1363" height="318" viewBox="0 0 1363 318" fill="none">
+        <path d="M1539 -27.7676C1539 163.195 1191.37 318 762.538 318C333.711 318 303.865 265.407 105.344 64.362C-60.1744 -121.763 -146.183 -386.59 762.538 -373.535C1191.37 -373.535 1539 -218.73 1539 -27.7676Z" fill="#EDAB46"/>
+      </svg>
+    </div>
+    <header id="header">
+      <img class="logo" src="css/img/logo.png" alt="" />
+      <div class="search">
+        <img class="lupa" src="css/img/pesquisa.svg" alt="pesquisa" />
+        <input class="input" type="search" />
+      </div>
       <nav>
         <a href="">Inicio</a>
         <a href="pages/products_page/products_page.html">Produtos</a>
         <a href="">Contato</a>
       </nav>
       <div class="selec">
-        <input class="input" type="search" />
-        <img class="lupa" src="css/img/pesquisa.svg" alt="pesquisa" />
         <img src="css/img/carrinho.svg" alt="carrinho" />
         <img src="css/img/perfil.svg " alt="perfil" />
       </div>
     </header>
-    <section class="apresentacao">
+    <section class="apresentacao" id="#apresentacao">
       <div>
         <h1>Mais de que um ecommerce</h1>
         <h1>Nós somos a qualidade</h1>
@@ -131,36 +137,204 @@
     <section class="sessao">
       <h1 class="title_sessao">SESSAO</h1>
       <div class="tipos">
-        <div class="tipo">
+        <div class="tipo racao">
           <img src="css/img/racoes.png" alt="" />
           <h4>Racoes</h4>
         </div>
-        <div class="tipo">
+        <div class="tipo brinquedos">
           <img src="css/img/brinquedos.png" alt="" />
           <h4>Brinquedos</h4>
         </div>
-        <div class="tipo">
+        <div class="tipo casas">
           <img src="css/img/cacho.png" alt="" />
           <h4>Casas para cahorros</h4>
         </div>
       </div>
+      <div class="container_grid">
+        <div class="grid">
+        <div class="boxes">
+          <img src="css/img/rac1.png" alt="" />
+          <h4>Ração Hill's Science Diet </h4>
+          <h3>R$ 120,99</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        <div class="boxes">
+          <img src="css/img/rac2.png" alt="" />
+          <h4>Ração Premier Ambientes Internos...</h4>
+          <h3>R$ 39,90</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        <div class="boxes">
+          <img src="css/img/racao3.png" alt="" />
+          <h4>Ração Premier Fórmula para Cães</h4>
+          <h3>R$ 36,90</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        <div class="boxes">
+          <img src="css/img/racao3.png" alt="" />
+          <h4>Ração Premier Fórmula para Cães</h4>
+          <h3>R$ 36,90</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        <div class="boxes">
+          <img src="css/img/rac2.png" alt="" />
+          <h4>Ração Premier Ambientes Internos...</h4>
+          <h3>R$ 39,90</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        <div class="boxes">
+          <img src="css/img/rac1.png" alt="" />
+          <h4>Ração Hill's Science Diet </h4>
+          <h3>R$ 120,99</h3>
+          <a href="">COMPRAR</a>
+        </div>
+        </div>
+        <div class="grid">
+          <div class="boxes">
+            <img src="css/img/brinq1.png" alt="" />
+            <h4>Brinquedo Zee.Dog Brain Dead para Cães</h4>
+            <h3>R$ 90,00</h3>
+            <a href="">COMPRAR</a>
+          </div>
+          <div class="boxes">
+            <img src="css/img/brinq2.png" alt="" />
+            <h4>Brinquedo Chalesco Pelúcia Crocodilo</h4>
+            <h3>R$ 31,49</h3>
+            <a href="">COMPRAR</a>
+          </div>
+          <div class="boxes">
+            <img src="css/img/brinq3.png" alt="" />
+            <h4>Brinquedo Chalesco Lagosta Vinil </h4>
+            <h3>R$ 19,90</h3>
+            <a href="">COMPRAR</a>
+          </div>
+          <div class="boxes">
+            <img src="css/img/brinq3.png" alt="" />
+            <h4>Brinquedo Chalesco Lagosta Vinil </h4>
+            <h3>R$ 19,90</h3>
+            <a href="">COMPRAR</a>
+          </div>
+          <div class="boxes">
+            <img src="css/img/brinq2.png" alt="" />
+            <h4>Brinquedo Chalesco Pelúcia Crocodilo</h4>
+            <h3>R$ 31,49</h3>
+            <a href="">COMPRAR</a>
+          </div>
+          <div class="boxes">
+            <img src="css/img/brinq1.png" alt="" />
+            <h4>Brinquedo Zee.Dog Brain Dead para Cães</h4>
+            <h3>R$ 90,00</h3>
+            <a href="">COMPRAR</a>
+          </div>
+        </div>
+        <div class="grid">
+            <div class="boxes">
+              <img src="css/img/casa1.png" alt="" />
+              <h4>Cama Zee.Cat Polo para Cachorros</h4>
+              <h3>R$ 299,00</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/casa2.png" alt="" />
+              <h4>Cama Zee.Cat Polo para Cachorros</h4>
+              <h3>R$ 799,99</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/casa3.png" alt="" />
+              <h4>Casa Kenny Ferplast para Cães</h4>
+              <h3>R$ 499,99</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/casa3.png" alt="" />
+              <h4>Casa Kenny Ferplast para Cães</h4>
+              <h3>R$ 499,99</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/casa2.png" alt="" />
+              <h4>Cama Zee.Cat Polo para Cachorros</h4>
+              <h3>R$ 799,99</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/casa1.png" alt="" />
+              <h4>Cama Zee.Cat Polo para Cachorros</h4>
+              <h3>R$ 299,00</h3>
+              <a href="">COMPRAR</a>
+            </div>
+        </div>
+      </div>
     </section>
     <section class="avaliados">
-      <h1 class="title">Bem Avaliados</h1>
-      <div class="bem_avaliados">
-        <img src="css/img/mamaco.png" alt="" />
-        <img src="css/img/racaoGolden.png" alt="" />
-        <img src="css/img/cassinha.png" alt="" />
-        <img src="css/img/sapo.png" alt="" />
+      <h1 class="title">Promocoes</h1>
+      <div class="container_scroll">
+        <img id="left2" src="css/img/icon/seta.svg" alt="" />
+        <div class="container2">
+          <div class="carrossel2">
+            <div class="boxes">
+              <img src="css/img/racao1.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao2.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao3.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao1.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao2.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao3.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao1.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao2.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+            <div class="boxes">
+              <img src="css/img/racao3.png" alt="" />
+              <h4>Ração Hills para cães filhotes de mini...</h4>
+              <h3>R$ 167,90</h3>
+              <a href="">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <img id="right2" src="css/img/icon/seta.svg" alt="" />
       </div>
+      
     </section>
     <footer>
-      <img src="css/img/logo.svg" alt="" />
-      <div>
-        <a href=""><h3>Inicio</h3></a>
-        <a href=""><h3>Produtos</h3></a>
-        <a href=""><h3>Carrinho</h3></a>
-      </div>
+      <img src="css/img/logo.png" alt="" />
       <div>
         <a class="numb" href=""
           ><img src="css/img/icon/whatsapp 1.png" alt="" />
@@ -175,7 +349,13 @@
           <h3>(81) 90000-0000</h3></a
         >
       </div>
+      <div>
+        <a href="#apresentacao"><h3>Inicio</h3></a>
+        <a href="pages/products_page/products_page.html"><h3>Produtos</h3></a>
+        <a href=""><h3>Carrinho</h3></a>
+      </div>
     </footer>
   </body>
+
   <script src="script.js"></script>
 </html>

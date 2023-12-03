@@ -25,6 +25,7 @@ input[type="checkbox"]:checked + .checkbox-custom {
 
 .filter {
     display: flex;
+    gap: 2em;
     justify-content: space-between;
 }
 
@@ -32,7 +33,7 @@ input[type="checkbox"]:checked + .checkbox-custom {
     margin-top: 50px;
 }
 
-#products {
+.grid {
     width: 50%;
     margin: 0 auto;
 }

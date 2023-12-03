@@ -9,9 +9,14 @@
   font-family: LuckiestGuy;
   src: url(fonts/LuckiestGuy-Regular.ttf);
 }
-
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
 body{
-  margin: 0 20%;
+  margin: 0 16%;
   font-family: Helvetica, sans-serif;
 }
 *{
