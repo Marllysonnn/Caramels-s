@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 -33.3%;
+  margin: 0 -23.5%;
   padding: 3em;
   background: #EDAB46;
 }
@@ -28,7 +28,7 @@
 #right{
   cursor: pointer;
 }
-.container {
+.container, .container2 {
   display: flex;
   width: 48em;
   border-radius: 1em;
@@ -36,7 +36,7 @@
   overflow: hidden;
 }
 
-.carrossel {
+.carrossel, .carrossel2 {
   display: flex;
   gap: 3em;
   transition: margin 0.5s;
