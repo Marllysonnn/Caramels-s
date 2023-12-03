@@ -1,35 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./carrinho_style.css">
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./carrinho_style.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Products</title>
-</head>
-<body>
-    <img src="../../css/img/elipse_header.png" alt="elipse do header" class="elipse">
+  </head>
+  <body>
+    <img
+      src="../../css/img/elipse_header.png"
+      alt="elipse do header"
+      class="elipse"
+    />
     <header id="header">
-        <img class="logo" src="/css/img/logo.png" alt="" />
-        <div class="search">
-          <img class="lupa" src="/css/img/pesquisa.svg" alt="pesquisa" />
-          <input class="input" type="search" />
-        </div>
-        <nav>
-          <a href="">Inicio</a>
-          <a href="pages/products_page/products_page.html">Produtos</a>
-          <a href="">Contato</a>
-        </nav>
-        <div class="selec">
-          <img src="/css/img/carrinho-branco.png" alt="carrinho" class="carrinho"/>
-          <img src="/css/img/perfil.svg " alt="perfil" />
-        </div>
-      </header>
-   
-      <section></section>
-      <section></section>
+      <img class="logo" src="/css/img/logo.png" alt="" />
+      <div class="search">
+        <img class="lupa" src="/css/img/pesquisa.svg" alt="pesquisa" />
+        <input class="input" type="search" />
+      </div>
+      <nav>
+        <a href="">Inicio</a>
+        <a href="pages/products_page/products_page.html">Produtos</a>
+        <a href="">Contato</a>
+      </nav>
+      <div class="selec">
+        <img
+          src="/css/img/carrinho-branco.png"
+          alt="carrinho"
+          class="carrinho"
+        />
+        <img src="/css/img/perfil.svg " alt="perfil" />
+      </div>
+    </header>
 
-</body>
-<script src="../../script.js"></script>
+    <main>
+      <h1>Carrinho</h1>
+
+      <section class="div-products">
+        <div class="products">
+          <img src="/css/img/rac3.png" alt="Ração" />
+          <h3>Ração premier Cães Adultos Raças Grandes Frango 20 Kg</h3>
+          
+          <div class="quantity-price">
+              <p>Quantity:1</p>
+              <p>Price:229,90R$</p>
+          </div>
+        </div>
+
+        <div class="products">
+          <img src="/css/img/rac2.png" alt="Ração" />
+          <h3>Ração premier Cães Adultos Raças Grandes Frango 20 Kg</h3>
+               <div class="quantity-price">
+              <p>Quantity:1</p>
+              <p>Price:229,90R$</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="address-order">
+        <h2>Address</h2>
+        <div class="background">
+          <p>Claudio Moreira Pereira - (81) 99878-1452</p>
+          <p>
+            Av.Mal.Mascarenhas de Morais, 3905 - Imbiribeira, Recife - PE,
+            51150-003
+          </p>
+        </div>
+        <h2>Order</h2>
+        <div class="background">
+          <p>Nutrilus Pro+ Chicken & Beef Dry Food for Dogs...</p>
+          <p>R$ 293,90</p>
+        </div>
+        <div class="background">
+          <p>Premium Chicken & Beef Food for Adult Dogs...</p>
+          <p>R$ 293,90</p>
+        </div>
+        <div class="background" id="fs">
+          <p>Descontos: R$ 00,00</p>
+          <p>Subtotal: R$ 00,00</p>
+          <p>Total: R$ 394,99</p>
+        </div>
+        <div class="btns">
+            <button class="buy">Buy</button>
+            <button class="Kbuying">Keep Buying</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="/css/img/logo.png" alt="" />
+      <div>
+        <a class="numb" href=""
+          ><img src="/css/img/icon/whatsapp 1.png" alt="" />
+          <h3>(81) 90000-0000</h3></a
+        >
+        <a class="insta" href=""
+          ><img src="/css/img/icon/instagram 1.png" alt="" />
+          <h3>@Caramelo.ecommerce</h3></a
+        >
+        <a class="phone" href=""
+          ><img src="/css/img/icon/telefone (1) 1.png" alt="" />
+          <h3>(81) 90000-0000</h3></a
+        >
+      </div>
+      <div>
+        <a href="#apresentacao"><h3>Inicio</h3></a>
+        <a href="pages/products_page/products_page.html"><h3>Produtos</h3></a>
+        <a href=""><h3>Carrinho</h3></a>
+      </div>
+    </footer>
+  </body>
+  <script src="../../script.js"></script>
 </html>

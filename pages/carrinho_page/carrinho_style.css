@@ -1,3 +1,69 @@
 .carrinho{
     height: 2rem;
 }
+
+.products{
+    display: flex;
+    margin: 1.80rem;
+    flex-direction: row;
+    background-color: #E8E6E6;
+    width: 45rem;
+    border-radius: 20px;
+}
+
+.quantity-price{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-left: -2rem;
+}
+
+.quantity-price p{
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.address-order{
+    background-color: #E8E6E6;
+    width: 50%;
+    box-shadow: black;
+}
+.address-order h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    background-color: white;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.btns button{
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    margin: 0.6rem;
+}
+.btns button:hover{
+    cursor: pointer;
+    transition: linear;
+    scale: 1.0100;
+}
+#fs{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.Kbuying{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #FFC145;
+    width: 50%; 
+}
+
+
+
