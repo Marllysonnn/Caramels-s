@@ -1,18 +1,18 @@
 .apresentacao{
   display: flex;
   justify-content: space-between;
-  margin-top: 0em;
+  margin-top: 2em;
   align-items: center;
   line-height: 2em;
 }
 .apresentacao h1{
-  font-size: 2.4em;
+  font-size: 1.8em;
   margin-top: 0.4em;
   color: #FF7C14;
 }
 .apresentacao h3{
   margin-bottom: 4em;
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: #828282;
 }
 .apresentacao a{
