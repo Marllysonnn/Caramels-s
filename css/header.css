@@ -5,7 +5,15 @@ header{
   margin: 0 -23.5%;
   padding: 0 23%;
   top: 0;
+  position: sticky;
+  height: 6em;
+  margin: 0 -23.5%;
+  padding: 0 23%;
+  top: 0;
   justify-content: space-between;
+  align-items: center;
+  animation: ease-in;
+  z-index: 9999;
   align-items: center;
   animation: ease-in;
   z-index: 999;
@@ -25,6 +33,7 @@ header{
 .selec, nav{
   display: flex;
   gap: 1.5em;
+  gap: 1.5em;
   font-size: 1.4em;
   font-weight: 600;;
 }
@@ -35,12 +44,19 @@ a{
 .selec img{
   cursor: pointer;
   z-index: 1;
+  z-index: 1;
 }
 .lupa{
+  height: 1.8em;
   height: 1.8em;
   border-radius: 0.5em;
   padding: 0.3em;
   z-index: 2;
+  background-color: #EDAB46;
+}
+.search{
+  display: flex;
+  align-items: center;
   background-color: #EDAB46;
 }
 .search{
@@ -54,7 +70,12 @@ input[type="search"]{
   border: none;
   padding: 0;
   margin-left: -2.1em;
+  margin-left: -2.1em;
   animation: linear;
+  z-index: 0;
+  padding-left: 2.6em;
+  padding-right: 1em;
+  font-size: 1.2em;
   z-index: 0;
   padding-left: 2.6em;
   padding-right: 1em;
