@@ -29,6 +29,10 @@ input[type="checkbox"]:checked + .checkbox-custom {
     justify-content: space-between;
 }
 
+.carrinho{
+  height: 2rem;
+}
+
 #menu-filter {
     margin-top: 50px;
 }
