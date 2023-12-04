@@ -1,0 +1,101 @@
+.credito{
+    display: none;
+    position: absolute;
+    box-shadow: inset 0 0 10em 20em rgba(0, 0, 0, 0.5), 0 0 20em 50em rgba(0, 0, 0, 0.5);
+    top: 6.5em;
+}
+hr{
+    width: 100%;
+}
+.container_credt{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.6em #00000050;
+    background-color: #fff;
+}
+.use_card{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.container_credt h3{
+    margin: 0 0 1 0;
+}
+.container_credt h5{
+    font-weight: 600;
+}
+.container_credt .dados{
+    display: flex;
+    align-items: center;
+}
+.how{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.credito a{
+    font-size: 0.8em;
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+    color: #fff;
+    border: 0.2em solid #e69925;
+    background-color: #e69925;
+}
+.credito a:hover{
+    background-color: #EDAB46;
+}
+.credito .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    align-self: end;
+    margin-top: 4em;
+}
+.register_new{
+    width: 55%;
+}
+.register_new h3{
+    margin: 0 0 1 0;
+}
+.register_new .grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid1 input{
+    width: 80%;
+}
+.register_new .grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid2 input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+input{
+    height: 2em;
+    border: none;
+    padding-left: 1em;
+    border-radius: 0.8em;
+    box-shadow: 0.1em 0.1em 0.5em;
+}
+input:focus{
+    outline: none;
+}
+.grid1 input:nth-child(2){
+    padding-left: 2.5em;
+}
+.grid1 img{
+    position: absolute;
+    margin-top: 0.4em;
+    margin-left: 0.4em;
+    width: 1.4em;
+}
+.grid2 a{
+    grid-column: 3;
+    justify-self: end;
+    margin-top: 7em;
+}

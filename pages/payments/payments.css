@@ -16,7 +16,7 @@ hr{
 }
 .payments{
     display: flex;
-    gap: 3em;
+    gap: 2em;
     padding: 1em;
     margin: 2em 0;
     border-radius: 0.5em;

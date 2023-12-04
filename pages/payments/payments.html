@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
     <link rel="stylesheet" href="payments.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="pix.css">
+    <link rel="stylesheet" href="credito.css">
+    <link rel="stylesheet" href="boleto.css">
+    <link rel="stylesheet" href="alert.css">
+    <title>Pagamento</title>
   </head>
   <body>
     <header id="header">
@@ -26,8 +29,10 @@
         <img src="../../css/img/perfil.svg " alt="perfil" />
       </div>
     </header>
+    <div class="titl">
     <h1>Payments</h1>
     <hr />
+    </div>
     <section class="payments">
       <div class="pay_produtos">
         <h3>Delivery information</h3>
@@ -73,9 +78,9 @@
       <div class="pay_method">
         <h3>Payment method</h3>
         <div class="form">
-          <a href="">Pix</a>
-          <a href="">Crédito</a>
-          <a href="">Boleto</a>
+          <a id="pix" href="#">Pix</a>
+          <a id="credito" href="#">Crédito</a>
+          <a id="boleto" href="#">Boleto</a>
         </div>
         <h2>CPF</h2>
         <input class="cpf" type="text"placeholder="___.___.___-__" />
@@ -88,10 +93,153 @@
             </select>
         <div class="total_pay">
             <h3>R$ 459,80</h3>
-            <a href="">Pagar</a>
+            <a href="#">Pagar</a>
         </div>
       </div>
     </section>
+    <section class="PIX">
+      <h1>PIX</h1>
+      <hr>
+      <div class="info_pix">
+        <img src="../../css/img/checked.png" alt="">
+        <div>
+          <h4>Order accepted, awaiting payment</h4>
+          <h5>Tour code will expire, plase make payment within the correct period.</h5>
+        </div>
+        <a class="pay" href="">Change payment method</a>
+      </div>
+      <div class="order">
+        <img src="../../css/img/pix.png" alt=""></img>
+        <div class="segment">
+          <h4>Oder accepted, awaiting payment</h4>
+          <h5><strong>1</strong>Open your bank app and find the "Pix" payment option</h5>
+          <h5><strong>2</strong>Open your bank's app and scan the QR Code</h5>
+          <h5><strong>3</strong>Check the details and finalize the Order</h5>
+          <h5>You can posy the Pix payment code and paste it directly into your bank's app</h5>
+          <h6>00020101021226910014br.gov.bcb.pix6569api.developer.btgpactual.com/v1/p/v2/br <br> b3c3b1abfcc1491b886c4af7da39aec052</h6>
+        </div>
+        <img class="qr" src="../../css/img/qrcode.png" alt="">
+      </div>
+      <div class="information">
+        <h4>Informacao do Pedido</h4>
+        <h5>Numero do Pedido: <strong>8180908981410432</strong></h5>
+        <h5>Data do Pedido: <strong>2023-12-01 01:22</strong></h5>
+        <h5>Valor: <strong>BRL 1.049.5</strong></h5>
+      </div>
+    </section>
+    <section class="credito">
+      <h1>Cards</h1>
+      <hr>
+      <div class="container_credt">
+      <div class="use_card">
+        <h3>Use registered cards</h3>
+        <div class="dados">
+          <img src="../../css/img/master.png" alt="">
+          <h5>Claudio Nunes da Silva - 7070 **** **** ****</h5>
+        </div>
+        <div class="dados">
+          <img src="../../css/img/master.png" alt="">
+          <h5>Claudio Nunes da Silva - 8452 **** **** ****</h5>
+        </div>
+        <div class="dados">
+          <img src="../../css/img/master.png" alt="">
+          <h5>Silvia Nunes da Silva - 9436 **** **** ****</h5>
+        </div>
+      
+      <h5 class="how">How many installments</h5>
+      <div>
+      <select class="opcoes" name="opcoes">
+        <option class="opcoes" value="opcao1">SELECIONE...</option>
+        <option value="opcao1">installments 1</option>
+        <option value="opcao2">installments 2</option>
+        <option value="opcao3">installments 3</option>
+      </select>
+      </div>
+      <div class="buttons">
+      <a id="comprar" href="#">Buy</a>
+      <a id="negada" href="#">Change payment method</a>
+      </div>
+      </div>
+      <div class="hr"></div>
+      <div class="register_new">
+        <h3>register new card</h3>
+        <div class="grid1">
+          <h4>Card number</h4>
+          <h4>Cardholder Name</h4>
+          <div> <img src="../../css/img/card.svg" alt=""><input type="text" placeholder="Digite o numero do cartao"></div>
+          <input type="text" placeholder="Digite o nome que esta o cartao">
+        </div>
+        <div class="grid2">
+          <h4>CVV</h4>
+          <h4>Validity</h4>
+          <h4>Function</h4>
+          <input type="text" placeholder="Ex: 123">
+          <input type="text" placeholder="MM/YYYY">
+          <select class="opcoes" name="opcoes">
+            <option class="opcoes" value="opcao1">SELECIONE...</option>
+            <option value="opcao1">Function 1</option>
+            <option value="opcao2">Function 2</option>
+            <option value="opcao3">Function 3</option>
+          </select>
+          <a id="cadast" href="#">Cadastrar</a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="boleto">
+      <h1>Boleto</h1>
+      <hr>
+      <div class="container_boleto">
+        <div class="tot_pay">
+          <h4>Total payments</h4>
+          <h4>R% 459,80</h4>
+        </div>
+        <hr>
+        <div class="descr">
+          <h4>Pay by</h4>
+          <h4>December 1, 2023</h4>
+        </div>
+        <div class="cod">
+          <h5>03449.54343 10387.497134 15712.501111 1 95540000028777</h5>
+          <img src="../../css/img/cod.png" alt="">
+          <div class="button">
+            <a href="">Save PDF</a>
+            <a href="">Copy Code</a>
+          </div>
+          <hr>
+          <h5>Use the typeable line or barcode shown above to make the payment through your internet banking service or visit a bank, ATM or lottery, carrying the printed slip.</h5>
+          <h5>Important: If your bill's due date falls on a weekend or holiday, you will be able to make payment normally on the first business day thereafter.</h5>
+          <h5>The process of confirming your payment may take up to 3 business days</h5>
+        </div>
+      </div>
+    </section>
+
+    <!--Alerts-->
+    <section class="confir_cartao">
+      <img class="fechar" src="../../css/img/X.png" alt="">
+      <img class="alert" src="../../css/img/alert_img.png" alt="">
+      <h1>Deseja comprar com este cartão?</h1>
+      <div>
+        <a class="sim" href="#">SIM</a>
+        <a class="nao" href="#">NÃO</a>
+      </div>
+    </section>
+    <section class="comprar_efetu">
+      <img class="fechar" src="../../css/img/X.png" alt="">
+      <img class="alert" src="../../css/img/alert_img.png" alt="">
+      <h1>Compra realizada com sucesso</h1>
+    </section>
+    <section class="comprar_n_efetu">
+      <img class="fechar" src="../../css/img/X.png" alt="">
+      <img class="alert" src="../../css/img/alert_img.png" alt="">
+      <h1>Compra não efetuada</h1>
+    </section>
+    <section class="cartao_cadas">
+      <img class="fechar" src="../../css/img/X.png" alt="">
+      <img class="alert" src="../../css/img/alert_img.png" alt="">
+      <h1>Cartão cadastrado com sucesso!</h1>
+    </section>
     <script src="../../script.js"></script>
+    <script src="payment.js"></script>
   </body>
 </html>

@@ -1,0 +1,66 @@
+.boleto{
+    width: 70%;
+    position: absolute;
+    box-shadow: inset 0 0 10em 20em rgba(0, 0, 0, 0.5), 0 0 20em 50em rgba(0, 0, 0, 0.5);
+    top: 6.5em;
+}
+hr{
+    width: 100%;
+}
+.container_boleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.6em #00000050;
+    background-color: #fff;
+}
+.descr, .tot_pay{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.container_boleto h4{
+    margin: 0.5em 0;
+}
+.cod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.cod .button{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.cod a{
+    font-size: 0.8em;
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+    color: #fff;
+    flex-shrink: 0;
+    border: 0.2em solid #e69925;
+    background-color: #e69925;
+}
+.cod h5{
+    width: 50em;
+    margin-top: 0.2em;
+    font-weight: 600;
+}
+.cod h5:nth-child(1){
+    text-align: center;
+}
+.cod h5:nth-child(1n+2)::before{
+    content: "";
+    display: block;
+    position: relative;
+    border-radius: 2em;
+    top: 1.2em;
+    left: -1.6em;
+    width: 1em;
+    height: 1em;
+    background-color: #e69925;
+}
