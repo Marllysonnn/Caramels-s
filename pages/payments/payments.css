@@ -1,0 +1,149 @@
+header{
+    background-color: #EDAB46;
+}
+body{
+    background-color: #f3f2f2;
+    background-image: url(../../css/img/fundo.png);
+    background-size: cover;
+}
+h1{
+    margin: 0.5em 0 0 1.5em;
+}
+hr{
+    width: 90%;
+    height: 0.1em;
+    background-color: #000;
+}
+.payments{
+    display: flex;
+    gap: 3em;
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.6em #00000050;
+    background-color: #fff;
+}
+.pay_produtos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+h5{
+    font-weight: 400;
+    margin: 0;
+}
+.produt_ord{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.descri{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.descri div{
+    display: flex;
+    align-items: center;
+}
+.descri img{
+    width: 3em;
+}
+.grid_prod{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em;
+}
+.grid_prod h5{
+    margin: 0.5em 0;
+}
+.total{
+    display: flex;
+    gap: 2em;
+    margin-top: 7em;
+    align-self: end;
+}
+.total::before{
+    content: "";
+    position: absolute;
+    margin-left: -19em;
+    margin-top: -1em;
+    width: 30em;
+    height: 0.1em;
+    background-color: #e69925;
+}
+.hr{
+    width: 0.2em;
+    background-color: #e69925;
+}
+.pay_method{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+}
+.pay_method a{
+    font-size: 0.8em;
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+    color: #e69925;
+    border: 0.2em solid #e69925;
+}
+.pay_method a:hover{
+    background-color: #EDAB46;
+    color: #fff;
+}
+.cpf{
+    height: 2em;
+    width: 12em;
+    padding-left: 1em;
+    box-shadow: 0.2em 0.2em 0.5em;
+    border: none;
+    border-radius: 1em;
+}
+.cupons{
+    height: 2em;
+    padding-left: 1em;
+    box-shadow: 0.2em 0.2em 0.5em;
+    border: none;
+    border-radius: 1em;
+}
+.opcoes{
+    height: 2em;
+    width: 14em;
+    padding-left: 1em;
+    box-shadow: 0.2em 0.2em 0.5em;
+    border: none;
+    border-radius: 1em;
+}
+.cpf, .opcoes:focus{
+    outline: none;
+}
+select {
+    appearance: none;
+    background: url('../../css/img/icon/Polygon\ 1.png') no-repeat right center;
+    background-position: 12em;
+    background-size: 1.5em;
+    padding-right: 0.5em;
+  }
+  .total_pay{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    align-self: end;
+    margin-top: 3em;
+    border: 0.1em solid #e69925;
+    border-radius: 5em;
+  }
+  .total_pay a{
+    background-color: #e69925;
+    color: #fff;
+  }
+  .total_pay h3{
+    margin: 0;
+  }
