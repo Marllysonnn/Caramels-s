@@ -25,3 +25,26 @@ footer div{
 footer h3{
     color: #fff;
 }
+
+@media (max-width: 1000px){
+    footer{
+        justify-content: space-evenly;
+    }
+    footer div{
+        line-height: 1em;
+    }
+    footer img{
+        width: 8em;
+    }
+  }
+  @media (max-width: 700px){
+    footer{
+        justify-content: space-evenly;
+    }
+    footer div{
+        line-height: 0.8em;
+    }
+    footer img{
+        width: 6em;
+    }
+  }

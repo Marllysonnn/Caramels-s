@@ -1,8 +1,112 @@
 header{
     background-color: #EDAB46;
-  }
-  body{
+}
+body{
+background-color: #fff;
+background-image: url(../../css/img/fundo.png);
+background-size: cover;
+}
+.show_products{
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+.valor{
+    text-align: start;
+}
+.show_products .num{
+    display: flex;
+    gap: 1em;
+}
+.imagens{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.imagens img{
+    width: 4em;
+    opacity: 50%;
+    cursor: pointer;
+}
+.imagens>:nth-child(2){
+    width: 12em;
+    opacity: 100%;
+    grid-row: span 3;   
+}
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    width: 20em;
+}
+.info{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.info a{
+    width: fit-content;
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    padding: 0.5em 3em;
+    color: #fff;
+    box-shadow: 0.2em 0.2em 0.5em #00000060;
+    background-color: #e69925;
+}
+.contador {
+    display: flex;
+    align-items: stretch;
+}
+.btn {
+    font-size: 1rem;
+    border-radius: 0.5em 0 0 0.5em;
     background-color: #fff;
-    background-image: url(../../css/img/fundo.png);
-    background-size: cover;
-  }
+    color: #000;
+    border: solid 0.1em #000;
+    cursor: pointer;
+}
+.btn:nth-child(3){
+    rotate: 180deg;
+    margin-left: -0.8em;
+}
+#numero {
+    width: 3.5em;
+    text-align: center;
+}
+.fechar{
+    width: 2em;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+}
+.alert{
+    width: 10em;
+}
+.add_carrinho{
+    position: fixed;
+    z-index: 2;
+    top: 10em;
+    left: 36%;
+    text-align: center;
+    width: 25%;
+    height: 50vh ;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    color: #fff;
+    box-shadow: 0em 0em 20em 50em #00000080;
+    background-color: #EDAB46;
+}
+
+@media (max-width: 1000px) {
+    .add_carrinho {
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 700px) {
+    .add_carrinho {
+        width: 70%;
+        left: 15%;
+    }
+}

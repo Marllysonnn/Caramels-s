@@ -28,3 +28,35 @@
 .apresentacao img{
   width: 30em;
 }
+
+@media (max-width: 1000px){
+  .apresentacao h1{
+    font-size: 1.2em;
+    width: max-content;
+  }
+  .apresentacao h3{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    width: max-content;
+  }
+  .apresentacao a{
+    font-size: 0.6em;
+    padding: 1em 3em;
+  }
+  .apresentacao img{
+    width: 18em;
+  }
+}
+@media (max-width: 700px){
+  .apresentacao h1{
+    font-size: 1em;
+    width: max-content;
+  }
+  .apresentacao h3{
+    font-size: 0.6em;
+    width: max-content;
+  }
+  .apresentacao img{
+    width: 14em;
+  }
+}

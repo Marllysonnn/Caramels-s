@@ -27,3 +27,50 @@
     scale: 1.1;
     transition: 0.5s;
 }
+
+@media (max-width: 1000px){
+    h1.title{
+      font-size: 1.5em;
+    }
+    div.container_scroll{
+      gap: 1em;
+    }
+    #left2, #right2{
+      width: 2em;
+    }
+    .carrossel2 div img{
+      width: 8em;
+    }
+  }
+  @media (max-width: 700px){
+    h1.title{
+      font-size: 1.2em;
+    }
+    div.container_scroll{
+      width: 90%;
+      gap: 0.5em;
+    }
+    #left2, #right2{
+      width: 2em;
+    }
+    .carrossel2{
+      gap: 1em;
+    }
+    .carrossel2 div img{
+      width: 6em;
+    }
+    .carrossel2 h4{
+      font-size: 0.6em;
+    }
+    .carrossel2 h3{
+      font-size: 0.8em;
+    }
+    .boxes{
+      margin-left: 1em;
+      width: 8em;
+      height: 12em;
+    }
+    .boxes a {
+      padding: 0.5em 0.5em;
+    }
+  }

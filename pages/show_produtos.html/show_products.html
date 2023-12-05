@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="show_products.css">
+    <link rel="stylesheet" href="../../pages/products/products_style.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,19 +16,70 @@
           <input class="input" type="search" />
         </div>
         <nav>
-          <a href="../../index.html">Inicio</a>
-          <a href="pages/products/products_page.html">Produtos</a>
-          <a href="">Contato</a>
+          <a href="../../index.html" style="font-size: 1.4em;">Inicio</a>
+          <a href="../products/products_page.html" style="font-size: 1.4em;">Produtos</a>
+          <a href="" style="font-size: 1.4em;">Contato</a>
         </nav>
         <div class="selec">
-          <a href="pages/carrinho_page/carrinho_page.html"><img src="../../css/img/carrinho.svg" alt="carrinho" /></a>
+          <a href="../carrinho_page/carrinho_page.html"><img src="../../css/img/carrinho.svg" alt="carrinho" /></a>
           <img src="../../css/img/perfil.svg " alt="perfil" />
         </div>
     </header>
-    <div class="imagens">
-        <img src="../../css/img/img_sec.png" alt="">
-        <img src="../../css/img/img_prin.png" alt="">
-        <img src="../../css/img/img_terc.png" alt="">
-    </div>
+    <section class="show_products">
+        <div class="imagens">
+        <img class="thumbnail"   src="../../css/img/img_sec.png" alt="Imagem Principal">
+        <img class="img_princ" id="img_princ" src="../../css/img/img_sec.png" alt="Imagem 1">
+        <img class="thumbnail" src="../../css/img/img_prin.png" alt="Imagem 2">
+        <img class="thumbnail" src="../../css/img/img_terc.png" alt="Imagem 3">
+        </div>
+        <div class="info">
+            <h2>Ração Premier Cães Adultos Raças Grandes Frango 20 Kg</h2>
+            <div class="num">
+                <h6>Código: 10002320000049</h6>
+                <h6>Em estoque</h6>
+            </div>
+            <h3 class="valor">R$ 229,90</h3>
+            <div class="num">
+                <div class="contador">
+                    <button class="btn" onclick="decrement()">-</button>
+                    <input type="number" id="numero" value="1" min="1">
+                    <button class="btn" onclick="increment()">+</button>
+                </div>
+                <a href="../../pages/payments/payments.html">Buy</a>
+            </div>
+            <a id="add" href="#">Adicionar ao Carrinho</a>
+        </div>
+    </section>
+    <section class="recomendados">
+        <div class="grid-products">
+            <div class="cards">
+                <img src="../../css/img/racoes.png" alt="" />
+                <h3>Ração Premier</h3>
+                <h3>Fórmula para os cães</h3>
+                <h3>R$ 46,90</h3>
+                <a href="../show_produtos.html/show_products.html">COMPRAR</a>
+            </div>
+            <div class="cards">
+                <img src="../../css/img/racoes.png" alt="" />
+                <h3>Ração Premier</h3>
+                <h3>Fórmula para os cães</h3>
+                <h3>R$ 46,90</h3>
+                <a href="../show_produtos.html/show_products.html">COMPRAR</a>
+            </div>
+            <div class="cards">
+                <img src="../../css/img/racoes.png" alt="" />
+                <h3>Ração Premier</h3>
+                <h3>Fórmula para os cães</h3>
+                <h3>R$ 46,90</h3>
+                <a href="../show_produtos.html/show_products.html">COMPRAR</a>
+            </div>
+            </div>
+    </section>
+    <section class="add_carrinho">
+        <img class="fechar" src="../../css/img/X.png" alt="">
+        <img class="alert" src="../../css/img/alert_img.png" alt="">
+        <h1>Adicionado ao carrinho com sucesso!</h1>
+      </section>
+    <script src="show_products.js"></script>
 </body>
 </html>

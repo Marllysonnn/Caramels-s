@@ -63,3 +63,33 @@
     display: flex;
     text-align: center;
 }
+
+@media (max-width: 1000px){
+    .tipos img{ 
+        width: 5em;
+    }
+    .grid div img{
+        width: 6em;
+    }
+}
+@media (max-width: 1000px){
+    .tipos img{ 
+        width: 3em;
+    }
+    .tipos{
+        margin-bottom: 1em;
+    }
+    .tipos h4{
+        flex-shrink: 0;
+        font-size: 0.8em;
+    }
+    .grid div img{
+        width: 4em;
+    }
+    .grid h4{
+        font-size: 0.8em;
+    }
+    .grid h3{
+        font-size: 0.8em;
+    }
+}

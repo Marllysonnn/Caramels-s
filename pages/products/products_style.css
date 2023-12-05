@@ -99,3 +99,30 @@ input[type="checkbox"]:checked + .checkbox-custom {
   .cards a:hover {
     background-color: #EDAB46;
   }
+
+  @media (max-width: 1000px) {
+    #menu-filter {
+        top: 8em; /* Ajuste conforme necessário */
+    }
+
+    .grid {
+        width: 80%; /* Ajuste conforme necessário */
+    }
+
+    .grid-products {
+        grid-template-columns: repeat(2, 1fr); /* Ou outra configuração para duas colunas */
+    }
+}
+
+
+@media (max-width: 700px) {
+    #menu-filter {
+        top: 6em;
+    }
+    .grid {
+        width: 90%;
+    }
+    .grid-products {
+        grid-template-columns: 1fr;
+    }
+}
