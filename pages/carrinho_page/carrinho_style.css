@@ -1,69 +1,100 @@
+header{
+    background-color: #EDAB46;
+}
+body{
+    background-color: #f3f2f2;
+    background-image: url(../../css/img/fundo.png);
+    background-size: cover;
+}
 .carrinho{
-    height: 2rem;
+    display: flex;
+    width: 100%;
+    gap: 1em;
 }
-
+.div-products{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 .products{
-    display: flex;
-    margin: 1.80rem;
-    flex-direction: row;
+    flex-shrink: 0;
+    grid-template-columns: 1fr 5fr;
+    display: grid;
+    border-radius: 0.5em;
+    padding-right: 1em;
+    box-shadow: 0.2em 0.2em 0.5em #00000080;
     background-color: #E8E6E6;
-    width: 45rem;
-    border-radius: 20px;
 }
-
+.products img{
+    width: 8em;
+    grid-row: span 2;
+}
 .quantity-price{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: end;
-    margin-left: -2rem;
+    gap: 2em;
+    font-weight: 600;
+    justify-content: end;
 }
-
-.quantity-price p{
-    margin-right: 2rem;
-    font-weight: bold;
-}
-
 .address-order{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 0.5em;
+    gap: 0.6em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.5em #00000080;
     background-color: #E8E6E6;
-    width: 50%;
-    box-shadow: black;
 }
 .address-order h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+.address-order p{
+    font-size: 0.8em;
+    margin: 0.2em 0;
 }
 .background{
-    background-color: white;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    padding: 0.1em 1.2em;
+    background-color: #fff;
 }
-
+.total{
+    font-weight: 600;
+    text-align: end;
+}
+.total:nth-child(2){
+    color: #15B11B;
+}
 .btns{
-    display: flex;
-    flex-direction: column;
-}
-.btns button{
-    padding: 1rem;
-    border-radius: 20px;
-    border: none;
-    margin: 0.6rem;
-}
-.btns button:hover{
-    cursor: pointer;
-    transition: linear;
-    scale: 1.0100;
-}
-#fs{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-.Kbuying{
-    display: flex;
+    margin: 0.5em;
     align-self: center;
-    justify-content: center;
-    background-color: #FFC145;
-    width: 50%; 
+    width: 60%;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
 }
-
-
-
+.btns .buy{
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 0.8em;
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+    color: #000;
+    box-shadow: 0.2em 0.2em 0.5em #00000060;
+    background-color: #fff;
+}
+.btns a{
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 0.8em;
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+    color: #fff;
+    box-shadow: 0.2em 0.2em 0.5em #00000060;
+    background-color: #e69925;
+}
