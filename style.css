@@ -18,7 +18,6 @@ html{
 body{
   margin: 0 16%;
   max-width: 1300px;
-  overflow-x: hidden;
   font-family: Helvetica, sans-serif;
 }
 *{
