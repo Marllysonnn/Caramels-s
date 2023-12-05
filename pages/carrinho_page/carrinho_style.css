@@ -12,7 +12,7 @@ body{
     gap: 1em;
 }
 .excluir{
-    position: "absolute"
+    position: "absolute";
     right: 1em;
 }
 .div-products{
