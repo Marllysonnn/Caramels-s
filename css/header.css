@@ -18,9 +18,12 @@ header{
 }
 .svg-container {
   z-index: -1;
-  width: 84vw;
   position: absolute;
   overflow: hidden;
+}
+svg{
+  width: 100%;
+  margin-right: 13em;
 }
 .selec, nav{
   display: flex;
