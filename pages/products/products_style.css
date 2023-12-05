@@ -1,3 +1,11 @@
+header{
+  background-color: #EDAB46;
+}
+body{
+  background-color: #fff;
+  background-image: url(../../css/img/fundo.png);
+  background-size: cover;
+}
 h5 {
     padding: 0 0 0 0;
     margin: 0;
@@ -34,7 +42,12 @@ input[type="checkbox"]:checked + .checkbox-custom {
 }
 
 #menu-filter {
-    margin-top: 50px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  gap: 0.6em;
+  position: sticky;
+  top: 14em;
 }
 
 .grid {
@@ -50,6 +63,9 @@ input[type="checkbox"]:checked + .checkbox-custom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 75px;
+    padding: 1em 0;
+    height: 60vh;
+    overflow: scroll;
 }
 
 .cards {
