@@ -22,7 +22,7 @@ header{
   overflow: hidden;
 }
 svg{
-  width: 100%;
+  width: 90vw;
   margin-right: 13em;
 }
 .selec, nav{
