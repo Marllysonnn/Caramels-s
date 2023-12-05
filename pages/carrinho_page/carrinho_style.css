@@ -11,6 +11,10 @@ body{
     width: 100%;
     gap: 1em;
 }
+.excluir{
+    position: "absolute"
+    right: 1em;
+}
 .div-products{
     width: 60%;
     display: flex;
