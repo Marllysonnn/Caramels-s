@@ -5,4 +5,4 @@ function deletarProduto () {
   deletar.style.display = "none";
 }
 
-excluir.addEventListener('click', deletarPrpduto)
+excluir.addEventListener('click', deletarProduto)
