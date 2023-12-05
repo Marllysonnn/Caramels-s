@@ -4,7 +4,8 @@
 .fechar{
     width: 2em;
     position: absolute;
-    right: 1em;
+    margin-left: 22em;
+    margin-top: -16em;
     cursor: pointer;
 }
 .confir_cartao{
@@ -12,7 +13,9 @@
     z-index: 2;
     top: 10em;
     left: 36%;
-    width: 25%;
+    width: 20%;
+    height: 30%;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,8 +49,9 @@
     z-index: 2;
     top: 10em;
     left: 36%;
-    width: 25%;
-    height: 50%;
+    width: 20%;
+    height: 30%;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,8 +71,9 @@ h1{
     z-index: 2;
     top: 10em;
     left: 36%;
-    width: 25%;
-    height: 50%;
+    width: 20%;
+    height: 30%;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,11 +90,12 @@ h1{
     z-index: 2;
     top: 10em;
     left: 36%;
-    width: 25%;
+    width: 20%;
+    height: 30%;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
     padding: 1em;
     color: #fff;
     box-shadow: 0em 0em 20em 50em #00000080;

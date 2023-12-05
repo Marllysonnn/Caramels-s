@@ -22,7 +22,7 @@ header{
   overflow: hidden;
 }
 svg{
-  width: 90vw;
+  width: 85vw;
   margin-right: 13em;
 }
 .selec, nav{
@@ -59,7 +59,7 @@ a{
   align-items: center;
 }
 input[type="search"]{
-  width: 10em;
+  width: 15em;
   height: 2.2em;
   border-radius: 0.4em;
   border: none;

@@ -1,5 +1,3 @@
-const input = document.querySelector('.input');
-const lupa = document.querySelector('.lupa');
 const scroll = document.querySelector('.carrossel');
 const container = document.querySelector('.container');
 const scroll2 = document.querySelector('.carrossel2');
@@ -16,19 +14,6 @@ const casas = document.querySelector(".casas");
 let inputAberto = false;
 let marginLeftValue = 0;
 let marginLeftValue2 = 0;
-
-function abrirInput() {
-  input.style.width = '18em';
-  input.style.transition = '0.5s';
-  inputAberto = true;
-}
-
-function fecharInput() {
-  if (inputAberto) {
-    input.style.width = '15em';
-    inputAberto = false;
-  }
-}
 
 function handleClickOutside(event) {
   if (inputAberto && !lupa.contains(event.target) && !input.contains(event.target)) {
